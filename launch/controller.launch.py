@@ -12,7 +12,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
     #controller config path;
     config_filepath = Path(get_package_share_directory('rovercontrol'), 'config', 'config.yaml').resolve() 
-    assert config_filepath.is_file()
+    assert config_filepath.is_file() 
 
     return LaunchDescription([
         Node(
